@@ -2,27 +2,24 @@
 
 namespace PairSessionRepo
 {
-    class Program
+    public class Program
     {
 
-        public decimal suma(decimal a, decimal b) 
-        {
-            return a + b;
-        }
+        
         static void Main(string[] args)
         {
-            decimal a;
-            decimal b;
+            decimal firstNumber;
+            decimal secondNumber;
 
-            Console.WriteLine("Ingrese valor para a");
-            a = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter first value");
+            firstNumber = decimal.Parse(Console.ReadLine());
             
-            Console.WriteLine("Ingrese valor para b");
-            b = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter second value");
+            secondNumber = decimal.Parse(Console.ReadLine());
 
 
-            Program p = new Program();
-            Console.WriteLine("La respuesta es: " +p.suma(a, b));
+            TestingCode p = new TestingCode();
+            Console.WriteLine("The answer is: " +p.sum(firstNumber, secondNumber));
        
         }
     }
